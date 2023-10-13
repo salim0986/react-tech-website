@@ -1,0 +1,90 @@
+#contact {
+  background-color: rgb(5, 11, 44);
+  width: 100vw;
+  min-height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.contact {
+  width: 80%;
+  padding: 5rem;
+  margin-top: 6rem;
+  background-color: white;
+  padding-bottom: 15rem;
+  border-top-right-radius: 15rem;
+  border-bottom-right-radius: 15rem;
+}
+.contactHeading {
+  font-size: xx-large;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(69, 69, 69);
+  padding-bottom: 2rem;
+}
+form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+label {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 2rem;
+  font-size: larger;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 100%;
+}
+input {
+  outline: none;
+  border: 1px solid rgb(29, 16, 124);
+  padding: 1rem 2rem;
+  width: 70%;
+  border-radius: 1rem;
+  color: rgb(29, 16, 124);
+  font-size: large;
+}
+button {
+  background-color: rgb(29, 16, 124);
+  border: none;
+  border: 1px solid rgb(29, 16, 124);
+  padding: 0.8rem 4rem;
+  border-radius: 1.5rem;
+  color: white;
+  cursor: pointer;
+  place-self: right;
+  font-size: x-large;
+}
+input:focus {
+  background-color: rgb(29, 16, 124);
+  color: white;
+}
+button:hover {
+  background-color: rgb(29, 16, 100);
+}
+
+@media (max-width: 675px) {
+  #contact {
+    background-color: white;
+  }
+  .contact {
+    width: 100%;
+    border-radius: 0%;
+    padding: 2rem;
+  }
+  .contactHeading {
+    text-align: center;
+  }
+  label {
+    gap: 1rem;
+  }
+  input {
+    width: 100%;
+    font-size: small;
+    padding: 0.7rem 1rem;
+  }
+}
